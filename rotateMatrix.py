@@ -12,7 +12,7 @@ def main():
 
 def rotate(matrix: List[List[int]]) -> None:
     ring_width = len(matrix)-1
-    ring_count = int (len(matrix) / 2) + len(matrix) % 2
+    ring_count = len(matrix) // 2 + len(matrix) % 2
 
     for ring in range(ring_count):
         print(f"{ring=} {ring_width=}")
