@@ -15,7 +15,6 @@ def rotate(matrix: List[List[int]]) -> None:
     ring_count = len(matrix) // 2 + len(matrix) % 2
 
     for ring in range(ring_count):
-        print(f"{ring=} {ring_width=}")
         for j in range(0,ring_width):
             x,y = ring+j,ring
             store = matrix[y][x]
